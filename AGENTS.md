@@ -63,23 +63,28 @@ When the user requests a git commit (e.g., "커밋해줘"):
 2. **Reconstruct a reusable prompt**: Create a prompt that could replicate this work in a new session.
 3. **Generate commit message**: Formulate a structured commit message following conventional commits (e.g., feat, fix, refactor).
 
+**Language Rule:**
+
+- All outputs (SUMMARY, PROMPT, CHANGES, COMMIT_TITLE, COMMIT_BODY) MUST be written in **Korean**.
+- Exception: Git commit types (e.g., feat:, fix:, refactor:) should remain in English.
+
 Output format MUST strictly follow this structure:
 
 SUMMARY:
-<Brief summary of the conversation and work done>
+<지금까지의 대화와 작업 내용을 요약한 한글 텍스트>
 
 PROMPT:
-<Reusable prompt for this task>
+<이 작업을 처음부터 다시 실행할 수 있는 한글 프롬프트>
 
 CHANGES:
 
-- <Change item 1>
-- <Change item 2>
+- <변경 사항 1 (한글)>
+- <변경 사항 2 (한글)>
 
 COMMIT_TITLE:
-<Type(scope): Short description within 50 characters>
+<feat: 한글로 작성한 50자 이내의 핵심 제목>
 
 COMMIT_BODY:
 
-- <Detailed description of why and what changed 1>
-- <Detailed description of why and what changed 2>
+- <한글로 작성한 변경 이유 및 구체적 내용 1>
+- <한글로 작성한 변경 이유 및 구체적 내용 2>
