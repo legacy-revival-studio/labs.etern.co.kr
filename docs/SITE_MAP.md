@@ -2,12 +2,12 @@
 
 ## /
 
-Labs home
+Legacy Revival Lab home
 
 Sections:
 
 - Hero
-- What is ETERN Labs
+- What is Legacy Revival Lab
 - Product list
 - Contact CTA
 
@@ -29,7 +29,7 @@ Live ClayTube showcase.
 
 ## /about
 
-ETERN Labs 설명.
+Legacy Revival Lab 설명.
 
 ---
 

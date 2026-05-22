@@ -5,8 +5,8 @@ interface Props {
 }
 
 const {
-	title = 'ETERN Labs',
-	description = 'ETERN Labs showcases small static-first digital products by ETERN.',
+	title = 'Legacy Revival Lab',
+	description = 'Legacy Revival Lab showcases small static-first digital products by ETERN.',
 } = Astro.props;
 
 const navItems = [
@@ -29,7 +29,7 @@ const navItems = [
 	</head>
 	<body>
 		<header class="site-header">
-			<a class="brand" href="/">ETERN Labs</a>
+			<a class="brand" href="/">Legacy Revival Lab</a>
 			<nav aria-label="Primary navigation">
 				{
 					navItems.map((item) => (
@@ -44,7 +44,7 @@ const navItems = [
 			<slot />
 		</main>
 		<footer class="site-footer">
-			<p>Static-first product showcase by ETERN.</p>
+			<p>Legacy Revival Lab, a static-first product showcase by ETERN.</p>
 		</footer>
 	</body>
 </html>
