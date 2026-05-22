@@ -2,7 +2,7 @@
 
 ## Why Astro
 
-Legacy Revival Lab is primarily a content-driven showcase site.
+ETERN Labs is primarily a content-driven showcase site.
 
 Requirements:
 
@@ -53,7 +53,7 @@ Automatic deploy on push.
 
 ## Architecture Principle
 
-Legacy Revival Lab site is separate from product repositories.
+ETERN Labs site is separate from product repositories.
 
 Example:
 

@@ -9,8 +9,8 @@ interface Props {
 }
 
 const {
-  title = "Legacy Revival Lab",
-  description = "Legacy Revival Lab showcases small static-first digital products by Legacy Revival Studio.",
+  title = "ETERN Labs",
+  description = "ETERN Labs showcases small static-first digital products by Legacy Revival Studio.",
   lang = "ko",
 } = Astro.props;
 
@@ -37,8 +37,8 @@ const languageHref = isEnglish
     : `/en${currentPath}`;
 const languageLabel = isEnglish ? "KO" : "EN";
 const footerText = isEnglish
-  ? "Legacy Revival Lab, a static-first product showcase by Legacy Revival Studio."
-  : "Legacy Revival Lab은 Legacy Revival Studio의 정적 우선 제품 쇼케이스입니다.";
+  ? "ETERN Labs, a static-first product showcase by Legacy Revival Studio."
+  : "ETERN Labs는 Legacy Revival Studio의 정적 우선 제품 쇼케이스입니다.";
 const brandHref = isEnglish ? "/en" : "/";
 ---
 
@@ -77,9 +77,9 @@ const brandHref = isEnglish ? "/en" : "/";
       >
         <span
           class="flex h-9 w-9 shrink-0 items-center justify-center border border-zinc-300 bg-zinc-950 text-sm font-semibold text-zinc-50 dark:border-zinc-700 dark:bg-white dark:text-black"
-          >LRR</span
+          >EL</span
         >
-        <span>Legacy Revival Lab</span>
+        <span>ETERN Labs</span>
       </a>
       <nav
         aria-label="Primary navigation"

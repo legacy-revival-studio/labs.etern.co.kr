@@ -2,7 +2,7 @@
 
 ## Selling Model
 
-Legacy Revival Lab은 SaaS를 판매하지 않습니다.
+ETERN Labs는 SaaS를 판매하지 않습니다.
 
 제품 템플릿 기반 구축 서비스를 제공합니다.
 

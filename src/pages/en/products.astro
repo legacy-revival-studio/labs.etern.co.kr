@@ -1,66 +1,66 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-	lang="en"
-	title="Products | Legacy Revival Lab"
-	description="Product list for Legacy Revival Lab, including ClayTube and future static-first templates."
+  lang="en"
+  title="Products | ETERN Labs"
+  description="Product list for ETERN Labs, including ClayTube and future static-first templates."
 >
-	<section class="page-hero">
-		<p class="eyebrow">Products</p>
-		<h1>Independent product assets, gathered in one place.</h1>
-		<p class="lede">
-			Legacy Revival Lab links to live product showcases while keeping each product in its own
-			repository and deployment flow.
-		</p>
-	</section>
+  <section class="page-hero">
+    <p class="eyebrow">Products</p>
+    <h1>Independent product assets, gathered in one place.</h1>
+    <p class="lede">
+      ETERN Labs links to live product showcases while keeping each product in
+      its own repository and deployment flow.
+    </p>
+  </section>
 
-	<section aria-labelledby="active-heading">
-		<h2 id="active-heading">Active</h2>
-		<div class="grid">
-			<article class="card product-card">
-				<p class="status">Active</p>
-				<h3>ClayTube</h3>
-				<p>
-					A static video portal generator that automatically syncs YouTube channels.
-					ClayTube itself lives in a separate repository; this site links to the project
-					showcase only.
-				</p>
-				<a class="button secondary" href="/claytube">Open project site</a>
-			</article>
-		</div>
-	</section>
+  <section aria-labelledby="active-heading">
+    <h2 id="active-heading">Active</h2>
+    <div class="grid">
+      <article class="card product-card">
+        <p class="status">Active</p>
+        <h3>ClayTube</h3>
+        <p>
+          A static video portal generator that automatically syncs YouTube
+          channels. ClayTube itself lives in a separate repository; this site
+          links to the project showcase only.
+        </p>
+        <a class="button secondary" href="/claytube">Open project site</a>
+      </article>
+    </div>
+  </section>
 
-	<section aria-labelledby="future-heading">
-		<h2 id="future-heading">Future Products</h2>
-		<div class="card">
-			<p>
-				Future product templates are reserved for Legacy Revival Lab as reusable
-				static-first assets.
-			</p>
-		</div>
-	</section>
+  <section aria-labelledby="future-heading">
+    <h2 id="future-heading">Future Products</h2>
+    <div class="card">
+      <p>
+        Future product templates are reserved for ETERN Labs as reusable
+        static-first assets.
+      </p>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
-	.page-hero {
-		padding-top: 88px;
-	}
+  .page-hero {
+    padding-top: 88px;
+  }
 
-	.status {
-		color: var(--color-accent);
-		font-size: 0.8rem;
-		font-weight: 800;
-		margin-bottom: 12px;
-		text-transform: uppercase;
-	}
+  .status {
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
 
-	.product-card {
-		max-width: 560px;
-	}
+  .product-card {
+    max-width: 560px;
+  }
 
-	.product-card .button {
-		margin-top: 12px;
-	}
+  .product-card .button {
+    margin-top: 12px;
+  }
 </style>

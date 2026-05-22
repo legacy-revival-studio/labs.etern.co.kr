@@ -10,12 +10,12 @@
 
 ## /
 
-Legacy Revival Lab 한국어 홈
+ETERN Labs 한국어 홈
 
 Sections:
 
 - Hero
-- What is Legacy Revival Lab
+- What is ETERN Labs
 - Product list
 - Contact CTA
 
@@ -37,7 +37,7 @@ Live ClayTube showcase.
 
 ## /about
 
-Legacy Revival Lab 설명.
+ETERN Labs 설명.
 
 ---
 
@@ -49,7 +49,7 @@ Legacy Revival Lab 설명.
 
 ## /en
 
-Legacy Revival Lab English home.
+ETERN Labs English home.
 
 ---
 
