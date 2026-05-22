@@ -35,7 +35,7 @@ const languageHref = isEnglish
   : currentPath === "/"
     ? "/en"
     : `/en${currentPath}`;
-const languageLabel = isEnglish ? "한국어" : "English";
+const languageLabel = isEnglish ? "KO" : "EN";
 const footerText = isEnglish
   ? "Legacy Revival Lab, a static-first product showcase by Legacy Revival Studio."
   : "Legacy Revival Lab은 Legacy Revival Studio의 정적 우선 제품 쇼케이스입니다.";
@@ -91,9 +91,16 @@ const brandHref = isEnglish ? "/en" : "/";
           ))
         }
         <a
-          class="rounded-full px-3 py-2 no-underline bg-panel text-ink border border-line font-bold hover:bg-page transition-colors"
-          href={languageHref}>{languageLabel}</a
+          class="flex items-center gap-1.5 rounded-full px-3 py-2 no-underline bg-panel text-ink border border-line font-bold hover:bg-page transition-colors"
+          href={languageHref}
         >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+          <span>{languageLabel}</span>
+        </a>
         <ThemeToggle />
       </nav>
     </header>
