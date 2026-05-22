@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+	lang="en"
+	title="Legacy Revival Lab"
+	description="Legacy Revival Lab introduces small static-first digital products and template-based build services."
+>
+	<section class="hero">
+		<p class="eyebrow">Static-first showcase</p>
+		<h1>Small digital products, built as lasting assets.</h1>
+		<p class="lede">
+			Legacy Revival Lab introduces product templates and project sites created by Legacy
+			Revival Studio. Each product lives in its own repository; Legacy Revival Lab keeps the
+			portfolio clear, focused, and easy to explore.
+		</p>
+		<div class="actions">
+			<a class="button" href="/en/products">View products</a>
+			<a class="button secondary" href="/en/contact">Start an inquiry</a>
+		</div>
+	</section>
+
+	<section aria-labelledby="what-heading">
+		<p class="eyebrow">Legacy Revival Lab</p>
+		<h2 id="what-heading">A showcase for reusable product assets.</h2>
+		<div class="grid">
+			<div class="card">
+				<h3>Product repositories stay separate</h3>
+				<p>
+					Products are developed as independent projects, while Legacy Revival Lab links to
+					their live showcases and explains where each one fits.
+				</p>
+			</div>
+			<div class="card">
+				<h3>Template-first delivery</h3>
+				<p>
+					The focus is not SaaS subscriptions. Legacy Revival Studio uses product templates
+					to configure and deliver static sites quickly.
+				</p>
+			</div>
+			<div class="card">
+				<h3>Static by default</h3>
+				<p>
+					Astro and GitHub Pages keep the site fast, maintainable, and free from unnecessary
+					client-side JavaScript.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section aria-labelledby="products-heading">
+		<p class="eyebrow">Products</p>
+		<h2 id="products-heading">Current product</h2>
+		<article class="product-feature">
+			<div>
+				<h3>ClayTube</h3>
+				<p>
+					A static video portal generator that automatically syncs YouTube channels and
+					publishes them as a focused showcase.
+				</p>
+			</div>
+			<a class="button secondary" href="/claytube">Open ClayTube</a>
+		</article>
+	</section>
+
+	<section class="cta" aria-labelledby="contact-heading">
+		<p class="eyebrow">Contact</p>
+		<h2 id="contact-heading">Need a template-based product site?</h2>
+		<p>
+			Send a brief inquiry with the product type, desired pages, and target launch date.
+			Legacy Revival Studio will review the fit and next steps.
+		</p>
+		<div class="actions">
+			<a class="button" href="/en/contact">Contact Legacy Revival Lab</a>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.hero {
+		min-height: 68vh;
+		padding-top: 88px;
+	}
+
+	.product-feature,
+	.cta {
+		align-items: center;
+		background: #ffffff;
+		border: 1px solid var(--color-line);
+		border-radius: 8px;
+		display: flex;
+		gap: 24px;
+		justify-content: space-between;
+		padding: 28px;
+	}
+
+	.product-feature p,
+	.cta p {
+		margin-bottom: 0;
+		max-width: 680px;
+	}
+
+	@media (max-width: 720px) {
+		.product-feature,
+		.cta {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+	}
+</style>

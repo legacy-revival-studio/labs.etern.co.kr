@@ -2,22 +2,45 @@
 interface Props {
 	title?: string;
 	description?: string;
+	lang?: 'ko' | 'en';
 }
 
 const {
 	title = 'Legacy Revival Lab',
-	description = 'Legacy Revival Lab showcases small static-first digital products by ETERN.',
+	description = 'Legacy Revival Lab showcases small static-first digital products by Legacy Revival Studio.',
+	lang = 'ko',
 } = Astro.props;
 
-const navItems = [
-	{ href: '/', label: 'Home' },
-	{ href: '/products', label: 'Products' },
-	{ href: '/contact', label: 'Contact' },
-];
+const isEnglish = lang === 'en';
+const navItems = isEnglish
+	? [
+			{ href: '/en', label: 'Home' },
+			{ href: '/en/products', label: 'Products' },
+			{ href: '/en/contact', label: 'Contact' },
+		]
+	: [
+			{ href: '/', label: '홈' },
+			{ href: '/products', label: '제품' },
+			{ href: '/contact', label: '문의' },
+		];
+
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+const currentPath = pathname === '/en' ? '/en' : pathname;
+const isCurrent = (href: string) => currentPath === href;
+const languageHref = isEnglish
+	? currentPath.replace(/^\/en/, '') || '/'
+	: currentPath === '/'
+		? '/en'
+		: `/en${currentPath}`;
+const languageLabel = isEnglish ? '한국어' : 'English';
+const footerText = isEnglish
+	? 'Legacy Revival Lab, a static-first product showcase by Legacy Revival Studio.'
+	: 'Legacy Revival Lab은 Legacy Revival Studio의 정적 우선 제품 쇼케이스입니다.';
+const brandHref = isEnglish ? '/en' : '/';
 ---
 
 <!doctype html>
-<html lang="ko">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -29,22 +52,23 @@ const navItems = [
 	</head>
 	<body>
 		<header class="site-header">
-			<a class="brand" href="/">Legacy Revival Lab</a>
+			<a class="brand" href={brandHref}>Legacy Revival Lab</a>
 			<nav aria-label="Primary navigation">
 				{
 					navItems.map((item) => (
-						<a href={item.href} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>
+						<a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
 							{item.label}
 						</a>
 					))
 				}
+				<a class="language-link" href={languageHref}>{languageLabel}</a>
 			</nav>
 		</header>
 		<main>
 			<slot />
 		</main>
 		<footer class="site-footer">
-			<p>Legacy Revival Lab, a static-first product showcase by ETERN.</p>
+			<p>{footerText}</p>
 		</footer>
 	</body>
 </html>
@@ -116,9 +140,15 @@ const navItems = [
 	}
 
 	nav a:hover,
-	nav a[aria-current='page'] {
+	nav a[aria-current='page'],
+	.language-link {
 		background: var(--color-panel);
 		color: var(--color-ink);
+	}
+
+	.language-link {
+		border: 1px solid var(--color-line);
+		font-weight: 700;
 	}
 
 	section {
