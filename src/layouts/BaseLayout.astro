@@ -39,6 +39,9 @@ const languageLabel = isEnglish ? "KO" : "EN";
 const footerText = isEnglish
   ? "ETERN Labs, a static-first product showcase by Legacy Revival Studio."
   : "ETERN Labs는 Legacy Revival Studio의 정적 우선 제품 쇼케이스입니다.";
+const subtitle = isEnglish
+  ? "Small digital products, built to last."
+  : "작지만 오래 남는 디지털 제품";
 const brandHref = isEnglish ? "/en" : "/";
 ---
 
@@ -71,15 +74,18 @@ const brandHref = isEnglish ? "/en" : "/";
     <header
       class="flex items-center justify-between gap-6 py-6 w-[min(1120px,calc(100%-32px))] mx-auto sm:flex-row flex-col sm:items-center items-start"
     >
-      <a
-        class="flex items-center gap-3 font-extrabold no-underline text-2xl"
-        href={brandHref}
-      >
+      <a class="flex items-center gap-3 no-underline" href={brandHref}>
         <span
-          class="flex h-9 w-9 shrink-0 items-center justify-center border border-zinc-300 bg-zinc-950 text-sm font-semibold text-zinc-50 dark:border-zinc-700 dark:bg-white dark:text-black"
+          class="flex h-10 w-10 shrink-0 items-center justify-center border border-zinc-300 bg-zinc-950 text-sm font-semibold text-zinc-50 dark:border-zinc-700 dark:bg-white dark:text-black"
           >EL</span
         >
-        <span>ETERN Labs</span>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-xl leading-tight">ETERN Labs</span>
+          <span
+            class="text-[10px] sm:text-xs text-muted font-medium leading-tight"
+            >{subtitle}</span
+          >
+        </div>
       </a>
       <nav
         aria-label="Primary navigation"
