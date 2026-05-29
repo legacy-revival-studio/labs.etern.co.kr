@@ -1,5 +1,13 @@
 # Release Notes
 
+## v0.2.2 - 2026-05-29
+
+### What's Changed
+
+* chore: rename domain from `labs.etern.co.kr` to `etern.co.kr/labs` by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs/pull/9
+
+**Full Changelog**: https://github.com/eternops/labs/compare/v0.2.1...v0.2.2
+
 ## v0.2.1 - 2026-05-29
 
 ### What's Changed
