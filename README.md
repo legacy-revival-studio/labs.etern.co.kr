@@ -2,7 +2,7 @@
 
 **Small digital products, built to last.**
 
-ETERN Labs는 Legacy Revival Studio가 개발하는 작은 디지털 제품들을 소개하고, 제품 의뢰를 받기 위한 showcase 사이트입니다.
+ETERN Labs는 ETERNOps가 개발하는 작은 디지털 제품들을 소개하고, 제품 의뢰를 받기 위한 showcase 사이트입니다.
 
 This repository is built with **Astro**.
 

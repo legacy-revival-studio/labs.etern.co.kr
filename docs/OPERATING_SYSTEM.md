@@ -55,4 +55,4 @@ GitHub Pages를 기본으로 한다.
 ### 6. Asset Accumulation
 
 모든 제품은 장기적으로
-Legacy Revival Studio의 기술 자산이 된다.
+ETERNOps의 기술 자산이 된다.
