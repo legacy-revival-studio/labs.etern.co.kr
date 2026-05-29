@@ -100,67 +100,60 @@ This repo only links to it.
 
 ## Commit rules
 
-When the user requests a git commit (e.g., "커밋해줘"):
+On match [ "commit", "commit it", "commit this", "commit changes" ]:
 
-1. **Summarize the work**: Review the entire conversation history up to this point and summarize the changes made.
-2. **Reconstruct a reusable prompt**: Create a prompt that could replicate this work in a new session.
-3. **Generate commit message**: Formulate a structured commit message following conventional commits (e.g., feat, fix, refactor).
+1. Summary: Wrap up chat/work history shortly.
+2. Prompt: Minimal reusable prompt for new sessions.
+3. Msg: Structured conventional commit (feat, fix, refactor).
 
-**Language Rule:**
+[Constraint] ALL outputs MUST be in concise English. No chat filler.
 
-- All outputs (SUMMARY, PROMPT, CHANGES, COMMIT_TITLE, COMMIT_BODY) MUST be written in **Korean**.
-- Exception: Git commit types (e.g., feat:, fix:, refactor:) should remain in English.
-
-Output format MUST strictly follow this structure:
-
+Format strictly:
 SUMMARY:
-<지금까지의 대화와 작업 내용을 요약한 한글 텍스트>
+<Short summary text>
 
 PROMPT:
-<이 작업을 처음부터 다시 실행할 수 있는 한글 프롬프트>
+<Compact reusable prompt>
 
 CHANGES:
 
-- <변경 사항 1 (한글)>
-- <변경 사항 2 (한글)>
+- <Change 1, max 1 line>
+- <Change 2, max 1 line>
 
 COMMIT_TITLE:
-<feat: 한글로 작성한 50자 이내의 핵심 제목>
+<feat: Core title, under 50 chars>
 
 COMMIT_BODY:
 
-- <한글로 작성한 변경 이유 및 구체적 내용 1>
-- <한글로 작성한 변경 이유 및 구체적 내용 2>
+- <Concise reason/detail 1>
+- <Concise reason/detail 2>
 
 ## Pull Request & Push rules
 
-When the user requests a GitHub Push or Pull Request (e.g., "푸쉬해줘", "PR 만들어줘"):
+On match [ "push", "push it", "push this", "push branch", "pr", "pr it", "pr this" ]:
 
-1. **Check Git Status**: Ensure all changes are committed using the "Commit rules" defined above before pushing.
-2. **Collect Commit History**: Retrieve **all commit messages** on the current branch that are not yet merged into the base branch (e.g., main or develop). Do NOT rely only on the last commit.
-3. **Summarize Entire Work**: Review the accumulated commit history and summarize the changes comprehensively for the Pull Request.
-4. **Push & Create PR**: Push the current local branch to the remote repository and generate a Pull Request.
+1. Check: Run "Commit rules" first if uncommitted.
+2. Log: Fetch unmerged commits on current branch.
+3. Summary: Merge history into a brief PR overview.
+4. Action: Push and generate PR payload.
 
-**Language Rule:**
+[Constraint] ALL outputs MUST be in concise English.
 
-- All outputs (PR_TITLE, PR_BODY) MUST be written in **Korean**.
-
-Output format MUST strictly follow this structure:
-
+Format strictly:
 PR_TITLE:
-<feat/fix: 한글로 작성한 PR 핵심 제목>
+<feat/fix: PR title>
 
 PR_BODY:
 
-## 작업 개요
+## Overview
 
-<해당 브랜치에서 진행된 전체 커밋 내용을 종합하여, 이번 PR이 해결하려는 문제나 추가된 기능을 요약 (한글)>
+<Concise overview of merged commits>
 
-## 주요 변경 사항
+## Key Changes
 
-- <종합된 변경 사항 1 (한글)>
-- <종합된 변경 사항 2 (한글)>
+- <Key change 1, single bullet>
+- <Key change 2, single bullet>
 
-## 리뷰어에게 전달할 점 (선택)
+## Notes (Optional)
 
-- <리뷰어가 중점적으로 봐야 할 부분이나 특이 사항 (한글)>
+- <Brief notes, omit section if empty>
