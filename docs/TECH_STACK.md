@@ -58,8 +58,8 @@ ETERN Labs site is separate from product repositories.
 Example:
 
 - `etern.co.kr/labs` → Astro showcase
-- `claytube` → separate product repo
+- `eternops/claytube` → separate product repo
 
 ClayTube is linked via:
 
-`/claytube`
+`https://etern.co.kr/claytube`

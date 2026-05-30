@@ -21,14 +21,6 @@ Sections:
 
 ---
 
-## /claytube
-
-GitHub Pages project site.
-
-Live ClayTube showcase.
-
----
-
 ## /products
 
 제품 목록 페이지.

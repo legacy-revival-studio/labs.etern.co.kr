@@ -6,11 +6,11 @@ Status: Active
 
 Repository:
 
-- `claytube`
+- `eternops/claytube`
 
 Live:
 
-- `/claytube`
+- `https://etern.co.kr/claytube`
 
 Description:
 

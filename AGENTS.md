@@ -67,7 +67,7 @@ Primary pages:
 
 Products are linked to separate GitHub Pages project sites:
 
-- `/claytube`
+- `https://etern.co.kr/claytube`
 
 ---
 
