@@ -1,4 +1,4 @@
-name: Astro Playwright Tests
+name: Astro Vitest Tests(Unit)
 
 # 워크플로우가 실행될 타이밍 정의
 on:
@@ -28,14 +28,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 4. Playwright 실행에 필요한 실제 브라우저(Chromium 등) 및 시스템 의존성 설치
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-
-      # 5. [중요] Astro 빌드가 정상적으로 되는지 검증
-      - name: Build Astro project
-        run: npm run build
-
-      # 6. Vitest and Playwright E2E 테스트 실행
-      - name: Run Vite & Playwright tests
-        run: npm run test
+      # 4. Vitest and Playwright E2E 테스트 실행
+      - name: Run Vitest tests
+        run: npm run test:unit
