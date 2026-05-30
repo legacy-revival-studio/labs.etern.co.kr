@@ -1,5 +1,14 @@
 # Release Notes
 
+## v1.0.0 - 2026-05-30
+
+### What's Changed
+
+* Fix nav href by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs/pull/10
+* chore: add test github action by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs/pull/11
+
+**Full Changelog**: https://github.com/eternops/labs/compare/v0.2.2...v1.0.0
+
 ## v0.2.2 - 2026-05-29
 
 ### What's Changed
