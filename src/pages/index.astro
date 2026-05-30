@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Link from "../components/Link.astro";
 ---
 
 <BaseLayout
@@ -21,14 +22,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       한눈에 살펴볼 수 있는 쇼케이스 역할을 합니다.
     </p>
     <div class="flex flex-wrap gap-4">
-      <a
+      <Link
         class="inline-flex items-center justify-center bg-accent text-white font-bold rounded-full px-8 py-3 hover:bg-accent-dark transition-colors no-underline"
-        href="/products">제품 보기</a
-      >
-      <a
+        href="/products"
+        >제품 보기
+      </Link>
+      <Link
         class="inline-flex items-center justify-center bg-panel border border-line text-ink font-bold rounded-full px-8 py-3 hover:bg-page transition-colors no-underline"
-        href="/contact">문의하기</a
-      >
+        href="/contact"
+        >문의하기
+      </Link>
     </div>
   </section>
 
@@ -84,10 +87,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           포털 생성기입니다.
         </p>
       </div>
-      <a
+      <Link
         class="inline-flex items-center justify-center bg-ink text-white dark:text-black font-bold rounded-full px-8 py-3 hover:opacity-90 transition-opacity no-underline whitespace-nowrap"
-        href="/claytube">ClayTube 열기</a
-      >
+        href="/claytube"
+        >ClayTube 열기
+      </Link>
     </article>
   </section>
 
@@ -108,10 +112,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         제품 유형, 필요한 페이지, 목표 공개 일정을 간단히 보내 주세요.
         ETERNOps가 적합성과 다음 단계를 검토합니다.
       </p>
-      <a
+      <Link
         class="inline-flex items-center justify-center bg-accent text-white font-bold rounded-full px-10 py-4 hover:bg-accent-dark transition-colors no-underline"
-        href="/contact">ETERN Labs에 문의하기</a
-      >
+        href="/contact"
+        >ETERN Labs에 문의하기
+      </Link>
     </div>
   </section>
 </BaseLayout>

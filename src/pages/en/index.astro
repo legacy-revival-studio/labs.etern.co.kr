@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Link from "../../components/Link.astro";
 ---
 
 <BaseLayout
@@ -22,14 +23,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
       portfolio clear, focused, and easy to explore.
     </p>
     <div class="flex flex-wrap gap-4">
-      <a
+      <Link
         class="inline-flex items-center justify-center bg-accent text-white font-bold rounded-full px-8 py-3 hover:bg-accent-dark transition-colors no-underline"
-        href="/en/products">View products</a
-      >
-      <a
+        href="/en/products"
+        >View products
+      </Link>
+      <Link
         class="inline-flex items-center justify-center bg-panel border border-line text-ink font-bold rounded-full px-8 py-3 hover:bg-page transition-colors no-underline"
-        href="/en/contact">Start an inquiry</a
-      >
+        href="/en/contact"
+        >Start an inquiry
+      </Link>
     </div>
   </section>
 
@@ -85,10 +88,11 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
           channels and publishes them as a focused showcase.
         </p>
       </div>
-      <a
+      <Link
         class="inline-flex items-center justify-center bg-ink text-white dark:text-black font-bold rounded-full px-8 py-3 hover:opacity-90 transition-opacity no-underline whitespace-nowrap"
-        href="/claytube">Open ClayTube</a
-      >
+        href="/claytube"
+        >Open ClayTube
+      </Link>
     </article>
   </section>
 
@@ -109,10 +113,11 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         Send a brief inquiry with the product type, desired pages, and target
         launch date. ETERNOps will review the fit and next steps.
       </p>
-      <a
+      <Link
         class="inline-flex items-center justify-center bg-accent text-white font-bold rounded-full px-10 py-4 hover:bg-accent-dark transition-colors no-underline"
-        href="/en/contact">Contact ETERN Labs</a
-      >
+        href="/en/contact"
+        >Contact ETERN Labs
+      </Link>
     </div>
   </section>
 </BaseLayout>

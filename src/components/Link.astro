@@ -1,0 +1,20 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { resolveHref } from "../utils/routing";
+
+interface Props extends HTMLAttributes<"a"> {
+  href: string;
+}
+
+const { href, ...rest } = Astro.props;
+
+const finalHref = resolveHref({
+  href,
+  baseUrl: import.meta.env.BASE_URL,
+  currentPath: Astro.url.pathname,
+});
+---
+
+<a href={finalHref} {...rest}>
+  <slot />
+</a>

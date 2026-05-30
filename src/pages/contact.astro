@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Link from "../components/Link.astro";
 ---
 
 <BaseLayout
@@ -73,10 +74,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           있다면 함께 보내 주세요.
         </p>
       </div>
-      <a
+      <Link
         class="inline-flex items-center justify-center bg-accent text-white font-bold rounded-full px-10 py-4 hover:bg-accent-dark transition-colors no-underline whitespace-nowrap"
-        href="mailto:ops@etern.co.kr">ops@etern.co.kr</a
-      >
+        href="mailto:ops@etern.co.kr"
+        >ops@etern.co.kr
+      </Link>
     </div>
   </section>
 </BaseLayout>
